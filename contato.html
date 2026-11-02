@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <div>
+        <h2>Menu de Navegação</h2>
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="historia_web.html">História da Web</a></li>
+             <li><a href="http.html">HTTP</a></li>
+             <li><a href="curriculo.html">Currículo</a></li>
+             <li><a href="contato.html">Contato</a></li>
+         </ul>
+    </div>
+
+    <hr>
+
+    <header>
+        <h1>Formulário de Contato</h1>
+        <p>
+            <em>INSTRUÇÕES:</em> Preencha o formulário abaixo com as suas informações, dúvidas ou sugestões.
+            Os campos marcados com asteristico são de preenchimento obrigatório.
+        </p>
+    </header>
+
+    <hr>
+
+    <main>
+        <form action="processar_formulario.php" method="post">
+            <div>
+                <label for="nome">Nome Completo: *</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            </div>
+        
+            <br>
+
+            <div>
+                <label for="email">Email: *</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="assunto">Assunto: *</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="">Selecione um estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mensagem">Mensagem: *</label>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Sua mensagem" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            <a href="curriculo.html">&larr; Voltar ao currículo</a>
+        </p>
+    </footer>
+
+    
+</body>
+</html>
