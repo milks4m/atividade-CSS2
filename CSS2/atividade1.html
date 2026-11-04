@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 - Layout Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        aside {
+            width: 25vw;
+            height: 100vh;
+            background-color: #f37021;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 20px;
+        }
+
+        .main-wrapper {
+            width: 75vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 15vh;
+            background-color: #009be3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            height: 70vh;
+            background-color: #584793;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            height: 15vh;
+            background-color: #0096a6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <aside>NAVEGAÇÃO</aside>
+    <div class="main-wrapper">
+        <header>CABEÇALHO</header>
+        <main>CONTEÚDO</main>
+        <footer>RODAPÉ</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2 - Slide Show Flex & Transition</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #121212;
+        }
+
+        .gallery {
+            display: flex;
+            width: 90vw;
+            height: 450px;
+            gap: 15px;
+        }
+
+        .card {
+            flex: 1;
+            border-radius: 30px;
+            background-size: cover;
+            background-position: center;
+            transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            flex: 5;
+        }
+
+        .card-caption {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 15px;
+            border-radius: 15px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .card:hover .card-caption {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="card" style="background-image: url(straykids.jpeg);">
+            <div class="card-caption">STRAY KIDS</div>
+        </div>
+        
+        <div class="card" style="background-image: url(bts.jpg);">
+            <div class="card-caption">BANGTAN SONYEONDAN</div>
+        </div>
+        
+        <div class="card" style="background-image: url(txt.jpeg);">
+            <div class="card-caption">TOMORROW X TOGETHER</div>
+        </div>
+        
+        <div class="card" style="background-image: url(ateez.jpeg);">
+            <div class="card-caption">ATEEZ</div>
+        </div>
+
+        <div class="card" style="background-image: url(nexz.jpeg);">
+            <div class="card-caption">NEXZ</div>
+        </div>
+
+        <div class="card" style="background-image: url(enhypen.jpg);">
+            <div class="card-caption">ENHYPEN</div>
+        </div>
+
+        <div class="card" style="background-image: url(CORTIS.png);">
+            <div class="card-caption">CORTIS</div>
+        </div>
+
+        <div class="card" style="background-image: url(boynextdoor.jpeg);">
+            <div class="card-caption">BOYNEXTDOOR</div>
+        </div>
+
+        <div class="card" style="background-image: url(seventeen.jpeg);">
+            <div class="card-caption">SEVENTEEN</div>
+        </div>
+
+        <div class="card" style="background-image: url(exo.jpeg);">
+            <div class="card-caption">EXO</div>
+        </div>
+
+        <div class="card" style="background-image: url(nct.jpg);">
+            <div class="card-caption">NCT (falta 5 membros)</div>
+        </div>
+
+        <div class="card" style="background-image: url(2pm.jpg);">
+            <div class="card-caption">2PM</div>
+        </div>
+    </div>
+</body>
+</html>
